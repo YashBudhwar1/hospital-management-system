@@ -18,7 +18,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { PatientFormSchema } from "../../../lib/schema";
 import { z } from "zod";
 import { CustomInput } from "../custom-input";
-import { GENDER, MARITAL_STATUS, RELATION } from "../../../lib";
+import { GENDER, MARITAL_STATUS } from "../../../lib";
 import { Button } from "./button";
 import { createNewPatient, updatePatient } from "@/app/actions/patient";
 import { toast } from "sonner";

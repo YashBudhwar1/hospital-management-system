@@ -32,6 +32,13 @@ export const PatientFormSchema = z.object({
     .string()
     .min(10, "Enter phone number")
     .max(10, "Enter phone number"),
+  relation: z.enum(["mother", "father", "husband", "wife", "other"], {
+    message: "Relations with contact person required",
+  }),
+  blood_group: z.string().optional(),
+  allergies: z.string().optional(),
+  medical_conditions: z.string().optional(),
+  medical_history: z.string().optional(),
   insurance_provider: z.string().optional(),
   insurance_number: z.string().optional(),
   privacy_consent: z
