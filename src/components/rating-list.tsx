@@ -18,7 +18,7 @@ export const RatingList = ({ data }: { data: any[] }) => {
       </div>
 
       <div className="space-y-2 p-2">
-        {data?.map((rate, id) => (
+        {data?.map((rate) => (
           <div key={rate?.id} className="even:bg-gray-50 p-3 rounded">
             <div className="flex justify-between">
               <div className="flex items-center gap-4">

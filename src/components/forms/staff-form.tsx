@@ -1,9 +1,9 @@
 "use client";
 
-import { DoctorSchema, StaffSchema } from "../../../lib/schema";
+import { StaffSchema } from "../../../lib/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
-import React, { useActionState, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
@@ -16,11 +16,9 @@ import {
 import { Button } from "../ui/button";
 import { Plus } from "lucide-react";
 import { Form } from "../ui/form";
-import { CustomInput, SwitchInput } from "../custom-input";
-import { SPECIALIZATION } from "@/utils/seetings";
-import { Label } from "../ui/label";
+import { CustomInput } from "../custom-input";
 import { toast } from "sonner";
-import { createNewDoctor, createNewStaff } from "@/app/actions/admin";
+import {  createNewStaff } from "@/app/actions/admin";
 
 const TYPES = [
   { label: "Nurse", value: "NURSE" },

@@ -10,9 +10,6 @@ interface DataProps {
   label: React.ReactNode;
 }
 export const MedicalHistoryDialog = async ({
-  id,
-  patientId,
-  doctor_id,
   label,
 }: DataProps) => {
   return (

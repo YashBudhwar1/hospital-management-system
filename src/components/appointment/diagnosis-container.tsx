@@ -5,7 +5,6 @@ import { NoDataFound } from "../no-data-found";
 import { AddDiagnosis } from "../dialogs/add-diagnosis";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { checkRole } from "@/utils/roles";
-import { record } from "zod";
 import { MedicalHistoryCard } from "./medical-history-card";
 
 export const DiagnosisContainer = async ({

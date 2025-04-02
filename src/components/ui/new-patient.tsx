@@ -2,7 +2,6 @@
 
 import { useUser } from "@clerk/nextjs";
 import { Patient } from "@prisma/client";
-import { Phone } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import {
@@ -30,7 +29,7 @@ interface DataProps {
 export const NewPatient = ({ data, type }: DataProps) => {
   const { user } = useUser();
   const [loading, setLoading] = useState(false);
-  const [imgURL, setImgURL] = useState<any>();
+  //const [imgURL, setImgURL] = useState<any>();
   const router = useRouter();
 
   const userData = {

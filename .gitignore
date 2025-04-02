@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.*
@@ -9,34 +9,65 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-# testing
-/coverage
-
-# next.js
+# Build and development
 /.next/
 /out/
-
-# production
 /build
+/.cache
+/.turbo
 
-# misc
-.DS_Store
-*.pem
+# Testing
+/coverage
+/.nyc_output
 
-# debug
+# Environment variables
+.env*
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Debug files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
 
-# env files (can opt-in for committing if needed)
-.env*
-.env.local
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
 
-# vercel
-.vercel
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Vercel
+.vercel
+
+# Local development
+.next/cache/
+
+# Storybook
+.storybook/
+storybook-static/
+
+# Cypress
+/cypress/screenshots/
+/cypress/videos/
+
+# Jest
+/jest-report/

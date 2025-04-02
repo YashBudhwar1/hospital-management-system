@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Card } from "./ui/card";
 import { ProfileImage } from "./profile-image";
 import { daysOfWeek } from "@/utils";
-import { cn } from "../../lib/utils";
 
 const getToday = () => {
   const today = new Date().getDay();
