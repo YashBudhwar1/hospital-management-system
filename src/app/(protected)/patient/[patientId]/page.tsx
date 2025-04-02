@@ -18,7 +18,7 @@ const PatientProfile = async (props: ParamsProps) => {
   const params = await props.params;
 
   let id = params.patientId;
-  let patientId = params.patientId;
+  const patientId = params.patientId;
   const cat = searchParams?.cat || "medical-history";
 
   if (patientId === "self") {

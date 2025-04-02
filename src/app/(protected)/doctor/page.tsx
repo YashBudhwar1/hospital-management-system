@@ -4,12 +4,10 @@ import { StatSummary } from "@/components/charts/stat-summary";
 import { StatCard } from "@/components/stat-cards";
 import { RecentAppointments } from "@/components/tables/recent-appointment";
 import { Button } from "@/components/ui/button";
-import { checkRole, getRole } from "@/utils/roles";
 import { getDoctorDashboardStats } from "@/utils/services/doctor";
 import { currentUser } from "@clerk/nextjs/server";
 import { BriefcaseBusiness, BriefcaseMedical, User, Users } from "lucide-react";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import React from "react";
 
 const DoctorDashboard = async () => {

@@ -1,5 +1,5 @@
 import { db } from "../../../lib/db";
-import { getMonth, format, startOfYear, endOfMonth, isToday } from "date-fns";
+import { getMonth, format, startOfYear, endOfMonth } from "date-fns";
 import { daysOfWeek } from "..";
 
 type AppointmentStatus = "PENDING" | "SCHEDULED" | "COMPLETED" | "CANCELLED";

@@ -7,7 +7,6 @@ import { RecentAppointments } from "@/components/tables/recent-appointment";
 import { Button } from "@/components/ui/button";
 import { AvailableDoctorProps } from "../../../../types/data-types";
 import { getPatientDashboardStatistics } from "@/utils/services/patient";
-import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import { Briefcase, BriefcaseBusiness, BriefcaseMedical } from "lucide-react";
 import Link from "next/link";

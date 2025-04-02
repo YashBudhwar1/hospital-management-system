@@ -1,12 +1,9 @@
 import { ActionDialog } from "@/components/action-dialog";
-import { ViewAction } from "@/components/action-options";
-import { DoctorForm } from "@/components/forms/doctor-form";
 import { StaffForm } from "@/components/forms/staff-form";
 import { Pagination } from "@/components/pagination";
 import { ProfileImage } from "@/components/profile-image";
 import SearchInput from "@/components/search-input";
 import { Table } from "@/components/tables/table";
-import { Button } from "@/components/ui/button";
 import { SearchParamsProps } from "../../../../../types";
 import { checkRole } from "@/utils/roles";
 import { DATA_LIMIT } from "@/utils/seetings";
