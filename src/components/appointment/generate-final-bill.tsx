@@ -28,7 +28,7 @@ interface DataProps {
 export const GenerateFinalBills = ({ id, total_bill }: DataProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
-  let discountInfo = null;
+  const discountInfo = null;
 
   const form = useForm<z.infer<typeof PaymentSchema>>({
     resolver: zodResolver(PaymentSchema),

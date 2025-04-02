@@ -23,7 +23,7 @@ const PatientDashboard = async () => {
     totalAppointments,
     availableDoctor,
     monthlyData,
-  } = await getPatientDashboardStatistics(user?.id!);
+  } = await getPatientDashboardStatistics(user?.id??"no statistics found for patient");
 
   if (user && !data) {
     redirect("/patient/registration");
