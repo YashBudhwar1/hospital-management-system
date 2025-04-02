@@ -1,10 +1,8 @@
 import { getRole } from "@/utils/roles";
 import {
-  Bell,
   LayoutDashboard,
   List,
   ListOrdered,
-  Logs,
   LucideIcon,
   Pill,
   Receipt,
@@ -104,12 +102,6 @@ export const Sidebar = async () => {
           icon: Users,
         },
         {
-          name: "Administer Medications",
-          href: "/nurse/administer-medications",
-          access: ["admin", "doctor", "nurse"],
-          icon: Pill,
-        },
-        {
           name: "Appointments",
           href: "/record/appointments",
           access: ["patient"],
@@ -122,12 +114,6 @@ export const Sidebar = async () => {
           icon: List,
         },
         {
-          name: "Prescription",
-          href: "#",
-          access: ["patient"],
-          icon: Pill,
-        },
-        {
           name: "Billing",
           href: "/patient/self?cat=payments",
           access: ["patient"],
@@ -138,18 +124,6 @@ export const Sidebar = async () => {
     {
       label: "System",
       links: [
-        {
-          name: "Notifications",
-          href: "/notifications",
-          access: ACCESS_LEVELS_ALL,
-          icon: Bell,
-        },
-        {
-          name: "Audit Logs",
-          href: "/admin/audit-logs",
-          access: ["admin"],
-          icon: Logs,
-        },
         {
           name: "Settings",
           href: "/admin/system-settings",
